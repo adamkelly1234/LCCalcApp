@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LCCalcApp.Calculator"
+             Title="Leaving Cert Grades Calculator"
+             BackgroundColor= "#34c6eb">
+    <ContentPage.Content >
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Subjects: 0" x:Name="SubjectsLabel" FontSize="Small" HorizontalOptions="Start" TextColor="White"/>
+            <Label Text="Score: 0" x:Name="ScoreLabel" FontSize="Large" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Label Text="+25 because taking HL Maths" x:Name="HLMathsLabel" HorizontalOptions="CenterAndExpand"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Higher" HorizontalTextAlignment="End" TextColor="White"></Label>
+                <Switch Grid.Column="1" IsToggled="false" Toggled="Switch_Toggled" HorizontalOptions="CenterAndExpand"/>
+                <Label Grid.Column="2" Text="Ordinary" HorizontalTextAlignment="Start" TextColor="White"></Label>
+
+            </Grid>
+
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Grid.Row="0" Text="H1" Clicked="Button_Clicked" x:Name="H1Button" ClassId="H1" TextColor="White" BackgroundColor="#d91c1c"></Button>
+                <Button Grid.Column="1" Grid.Row="0" Text="H2" Clicked="Button_Clicked" x:Name="H2Button" ClassId="H2" TextColor="White" BackgroundColor="#d91c1c"></Button>
+                <Button Grid.Column="2" Grid.Row="0" Text="H3" Clicked="Button_Clicked" x:Name="H3Button" ClassId="H3" TextColor="White" BackgroundColor="#d91c1c"></Button>
+                <Button Grid.Column="0" Grid.Row="1" Text="H4" Clicked="Button_Clicked" x:Name="H4Button" ClassId="H4" TextColor="White" BackgroundColor="#d91c1c"></Button>
+                <Button Grid.Column="1" Grid.Row="1" Text="H5" Clicked="Button_Clicked" x:Name="H5Button" ClassId="H5" TextColor="White" BackgroundColor="#d91c1c"></Button>
+                <Button Grid.Column="2" Grid.Row="1" Text="H6" Clicked="Button_Clicked" x:Name="H6Button" ClassId="H6" TextColor="White" BackgroundColor="#d91c1c"></Button>
+                <Button Grid.Column="0" Grid.Row="2" Text="H7" Clicked="Button_Clicked" x:Name="H7Button" ClassId="H7" TextColor="White" BackgroundColor="#d91c1c"></Button>
+                <Button Grid.Column="1" Grid.Row="2" Text="H8" Clicked="Button_Clicked" x:Name="H8Button" ClassId="H8" TextColor="White" BackgroundColor="#d91c1c"></Button>
+
+                <Button Grid.Column="0" Grid.Row="0" Text="O1" Clicked="Button_Clicked" x:Name="O1Button" ClassId="O1" TextColor="White" BackgroundColor="#fc6f03"></Button>
+                <Button Grid.Column="1" Grid.Row="0" Text="O2" Clicked="Button_Clicked" x:Name="O2Button" ClassId="O2" TextColor="White" BackgroundColor="#fc6f03"></Button>
+                <Button Grid.Column="2" Grid.Row="0" Text="O3" Clicked="Button_Clicked" x:Name="O3Button" ClassId="O3" TextColor="White" BackgroundColor="#fc6f03"></Button>
+                <Button Grid.Column="0" Grid.Row="1" Text="O4" Clicked="Button_Clicked" x:Name="O4Button" ClassId="O4" TextColor="White" BackgroundColor="#fc6f03"></Button>
+                <Button Grid.Column="1" Grid.Row="1" Text="O5" Clicked="Button_Clicked" x:Name="O5Button" ClassId="O5" TextColor="White" BackgroundColor="#fc6f03"></Button>
+                <Button Grid.Column="2" Grid.Row="1" Text="O6" Clicked="Button_Clicked" x:Name="O6Button" ClassId="O6" TextColor="White" BackgroundColor="#fc6f03"></Button>
+                <Button Grid.Column="0" Grid.Row="2" Text="O7" Clicked="Button_Clicked" x:Name="O7Button" ClassId="O7" TextColor="White" BackgroundColor="#fc6f03"></Button>
+                <Button Grid.Column="1" Grid.Row="2" Text="O8" Clicked="Button_Clicked" x:Name="O8Button" ClassId="O8" TextColor="White" BackgroundColor="#fc6f03"></Button>
+
+                <Button Grid.Column="2" Grid.Row="2" Text="Home" Clicked="Home_Button_Clicked" TextColor="White" BackgroundColor="#43464a"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

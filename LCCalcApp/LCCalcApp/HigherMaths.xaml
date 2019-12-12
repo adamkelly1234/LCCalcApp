@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LCCalcApp.HigherMaths"
+             Title="Leaving Cert Grades Calculator"
+             BackgroundColor= "#34c6eb">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Are you taking Higher Level Maths?" TextColor="White" FontSize="Medium"/>
+
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Yes" Clicked="YesButtonClicked" TextColor="White" BackgroundColor="#43464a"></Button>
+
+                <Button Grid.Column="1" Text="No" Clicked="NoButtonClicked" TextColor="White" BackgroundColor="#43464a"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
